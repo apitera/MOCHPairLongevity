@@ -1,0 +1,40 @@
+YEAR: Year of the breeding season during which the data were collected.
+
+BOX: Number identifying a specific nest box within the study site (some numbers are repeated across elevation sites, but not within sites)
+
+ELEVATION: Elevation site where 
+   H = high elevation
+   L = low elevation
+
+M.ID: Male's 10-digit hexadecimal PIT-tag ID
+
+M.EXP: Male's reproductive experience as of that YEAR's breeding season (see Methods for how this is determined and what these levels mean)
+
+F.ID: Female's 10-digit hexadecimal PIT-tag ID
+
+F.EXP: Female's reproductive experience as of that YEAR's breeding season (see Methods for how this is determined and what these levels mean)
+
+PAIR.EXP: The combined experience of the pair of breeders or pair composition
+   Experienced = Both male & female are experienced breeders
+   Inexperienced = Both male & female are inexperienced breeders
+   Mixed = One mate is experienced while the other is inexperienced
+
+NEW.PAIR: Is this a newly-formed breeding pair this YEAR?
+   N = No
+   Y = Yes
+
+EXPD.CLASSES: This is only defined for pairs of experienced breeders (pairs[which(pairs$PAIR.EXP == "Experienced")]) and says whether this is a pair that has bred together before or a new pair that has formed from divorce
+   From.Divorce = Newly formed pair of experienced breeders that formed from divorce (see Methods for details)
+   Not.From.Divorce = Newly formed pair of experienced breeders that formed from mate loss (see Methods for details)
+   Old.Pair = Pair of experienced breeders that bred together the previous year (see Methods for details)
+
+FIRST.EGG: Date on which the first egg was laid, clutch initiation date. MM/DD/YYYY format not used in analyses, but included for clarity
+
+
+J.FIRST.EGG: Day of year in which the first egg was laid, clutch initiation date. This was used in analyses, see Methods for details.
+
+CLUTCH: Clutch size, number of eggs present in nest upon incubation initiation
+
+BROOD: Brood size 15 days post hatch
+
+MEAN.MASS: Mean nestling mass. Mass of each nestling measured 15 days post hatch
